@@ -2,7 +2,7 @@ import numpy as np
 
 # -*- coding: utf-8 -*-
 #path to filename py
-path = r"C:\Users\john-\Desktop\ATLAS-sensitivity-to-Axions\project\py"
+path = r"C:\Users\john-\Desktop\ATLASsensitivity-to-Axions\project\py"
 
 filename = "\ATLASlimit"
 filename1 = "\Beamdump"

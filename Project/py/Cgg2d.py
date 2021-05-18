@@ -1,10 +1,8 @@
 import numpy as np
 import matplotlib.pyplot as plt
-from matplotlib.ticker import LinearLocator
 
 from brlma import Brl
 from fcgg import fagg
-from Cgg import Lagg
 from const import *
 
 

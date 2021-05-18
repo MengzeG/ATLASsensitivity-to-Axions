@@ -48,17 +48,14 @@ Z = Brczh(X, Y)-(Brl(X)/fagg(Y, X))
 #Contour plot
 #fig, ax = plt.subplots()
 
-plt.contourf(X, Y, Z, [Brczh(0.7, 0.1)-(Brl(0.7)/fagg(3e-3, 0.7))
-                        ,0
-                        ,Brczh(0.7, 0.72)-(Brl(0.7)/fagg(3e-3, 0.7))
-                        ,Brczh(0.7, 1)-(Brl(0.7)/fagg(3e-3, 0.7)),100], alpha = 0.7)
+#plt.contourf(X, Y, Z, [0,100], alpha = 0.7)
+#plt.contourf(X, Y, Z, [Brczh(0.7, 0.72)-(Brl(0.7)/fagg(3e-3, 0.7)),100], alpha = 0.7)
+#plt.contourf(X, Y, Z, [Brczh(0.7, 1)-(Brl(0.7)/fagg(3e-3, 0.7)),100], alpha = 0.7)
 
-C = contour(X, Y, Z, [Brczh(0.7, 0.1)-(Brl(0.7)/fagg(3e-3, 0.7))
-                    ,0
+plt.contourf(X, Y, Z, [0
                     ,Brczh(0.7, 0.72)-(Brl(0.7)/fagg(3e-3, 0.7))
-                    ,Brczh(0.7, 1)-(Brl(0.7)/fagg(3e-3, 0.7)),100])
+                    ,Brczh(0.7, 1)-(Brl(0.7)/fagg(3e-3, 0.7)),100], alpha = 0.7)
 
-clabel(C, inline = 1, fontsize = 10)
 
 plt.xscale("log")
 plt.yscale("log")
@@ -70,5 +67,4 @@ plt.ylabel('$C_{\u03B3\u03B3}$/\u039B[$TeV^{-1}$]')
 plt.show()
 
 print(Brczh(0.7, 0.72)-(Brl(0.7)/fagg(3e-3, 0.7)))
-print(Brczh(0.7, 0.1)-(Brl(0.7)/fagg(3e-3, 0.7)))
 print(Brczh(0.7, 1)-(Brl(0.7)/fagg(3e-3, 0.7)))
